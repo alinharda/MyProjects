@@ -1,0 +1,63 @@
+html {
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: $menu-color;
+    z-index: 99;
+  }
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  .menu-icon {
+    width: 50px;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    &::after,
+    &::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      display: block;
+      background-color: white;
+      margin: auto;
+      border-radius: 50px;
+      transition: all 200ms ease;
+    }
+    &::before {
+      margin: 20px auto 5px auto;
+    }
+    &.active::after {
+      transform: rotate(45deg) translateY(-5px);
+    }
+    &.active::before {
+      transform: rotate(-45deg) translateY(4px);
+    }
+  }
+
+  .icon {
+    width: fit-content;
+    margin: auto;
+    a {
+      display: block;
+      img {
+        display: block;
+        width: 300px;
+        @media screen and (max-width: 640px) {
+          width: 200px;
+        }
+      }
+    }
+  }
+}

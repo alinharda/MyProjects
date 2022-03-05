@@ -1,0 +1,29 @@
+:root {
+  --main-color: #e5e5e5;
+  --menu-color: #1abeff;
+  --shadow-color: #1abeff71;
+  --darkblue-color: #25395c;
+  --lightblue-color: #2787ea;
+  --mauve-color: #1c67d2;
+  --lightpink-color: #a4b0ff;
+  --orange-color: #ea7166;
+  --lightorange-color: #fca78a;
+  --pink-color: #ecd8e0;
+  --skin-clor: #ffd5b6;
+  --idk-color: #bad8e0;
+  --black-color: #000000;
+  --gray-color: #616161;
+  --white-color: #ffffff;
+}
+
+$color-gray: var(--gray-color);
+$black: var(--black-color);
+$white: var(--white-color);
+$body-color: var(--main-color);
+$menu-color: var(--menu-color);
+$color-darkblue: var(--darkblue-color);
+$color-mauve: var(--mauve-color);
+$color-lightpink: var(--lightpink-color);
+$color-orange: var(--orange-color);
+$color-lightorange: var(--lightorange-color);
+$color-shadow: var(--shadow-color);
